@@ -30,7 +30,7 @@ namespace Caesar_Cipher
             string input = inputTextBox.Text; // takes in the text
             int cipherShift = shiftComboBox.SelectedIndex; // takes in the shift
             List<char> listToUse = listCreator(input);
-            
+
 
         }
 
@@ -53,6 +53,11 @@ namespace Caesar_Cipher
 
 
 
+        }
+
+        private void textOUTPUT_Click(object sender, EventArgs e)
+        {
+            // why didnt it show the commit :(
         }
     }
 }

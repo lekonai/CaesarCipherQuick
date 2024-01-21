@@ -105,6 +105,7 @@
             textOUTPUT.Size = new Size(38, 15);
             textOUTPUT.TabIndex = 6;
             textOUTPUT.Text = "label1";
+            textOUTPUT.Click += textOUTPUT_Click;
             // 
             // homePage
             // 
