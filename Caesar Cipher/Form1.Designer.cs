@@ -34,6 +34,7 @@
             title = new Label();
             shiftComboBox = new ComboBox();
             shifterLabel = new Label();
+            textOUTPUT = new Label();
             SuspendLayout();
             // 
             // inputTextBox
@@ -78,6 +79,7 @@
             // shiftComboBox
             // 
             shiftComboBox.FormattingEnabled = true;
+            shiftComboBox.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25" });
             shiftComboBox.Location = new Point(12, 159);
             shiftComboBox.Name = "shiftComboBox";
             shiftComboBox.Size = new Size(171, 23);
@@ -94,12 +96,23 @@
             shifterLabel.TabIndex = 5;
             shifterLabel.Text = "And the shift";
             // 
+            // textOUTPUT
+            // 
+            textOUTPUT.AutoSize = true;
+            textOUTPUT.ForeColor = SystemColors.ButtonFace;
+            textOUTPUT.Location = new Point(12, 355);
+            textOUTPUT.Name = "textOUTPUT";
+            textOUTPUT.Size = new Size(38, 15);
+            textOUTPUT.TabIndex = 6;
+            textOUTPUT.Text = "label1";
+            // 
             // homePage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(64, 0, 0);
             ClientSize = new Size(813, 562);
+            Controls.Add(textOUTPUT);
             Controls.Add(shifterLabel);
             Controls.Add(shiftComboBox);
             Controls.Add(title);
@@ -121,5 +134,6 @@
         private Label title;
         private ComboBox shiftComboBox;
         private Label shifterLabel;
+        private Label textOUTPUT;
     }
 }
